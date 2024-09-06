@@ -1,0 +1,185 @@
+#include <iostream>
+#include <locale>
+#include <cmath>
+
+using namespace std;
+
+Task 1
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a, b, c, res;
+ 
+    cout << "Введите число А: ";
+    cin >> a;
+
+    cout << "Введите число B: ";
+    cin >> b;
+
+    cout << "Введите число C: ";
+    cin >> c;
+
+    res = (a + b + c) / 3;
+
+    cout << "Результат: " << res;
+    
+}
+
+Task 2
+int main() 
+{
+	setlocale(LC_ALL, "Russian");
+
+	int num, num2, res;
+
+	cout << "Введите число: ";
+	cin >> num;
+
+	cout << "Введите степень: ";
+	cin >> num2;
+
+	res = pow(num, num2);
+
+	cout << "Результат: " << res;
+
+}
+
+
+Task 3
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	float sum, res1, res2, res3;
+
+	int dol = 41;
+	int eur = 45;
+	int bitc = 2211422;
+
+	cout << "Введите сумму перевода:";
+	cin >> sum;
+
+	res1 = sum / dol;
+	res2 = sum / eur;
+	res3 = sum / bitc;
+
+	cout << "Результат перевода в доллары:" << res1 <<"\n";
+	cout << "Результат перевода в евро:" << res2 << "\n";
+	cout << "Результат перевода в биткойны:" << res3 << "\n";
+
+}
+
+Task 4
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    float fileSize, downloadSpeed;
+
+    cout << "Введите размер фильма (в ГБ): ";
+    cin >> fileSize;
+
+    cout << "Введите скорость интернет-соединения (в Мбит/с): ";
+    cin >> downloadSpeed;
+
+    
+    float NewfileSize = fileSize * 1024 * 8;
+    float downloadTime = NewfileSize / downloadSpeed;
+
+    int hours = downloadTime / 3600;
+    int minutes = (downloadTime - hours * 3600) / 60;
+    int seconds = downloadTime - hours * 3600 - minutes * 60;
+
+
+    cout << "Фильм скачается за: " << hours << " ч, " << minutes << " мин, " << seconds << " сек.";
+    
+}
+
+Task 5
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+    int Students, debtors, res;
+
+    cout << "Введите общее количество студентов: \n";
+    cin >> Students;
+
+    cout << "Введите количество должников: \n";
+    cin >> debtors;
+
+    res = (debtors * 100) / Students;
+   
+   cout << "Процент должников: " << res << "%" << endl;
+  
+}
+
+Task 6
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	int num1, num2;
+
+	cout << "Введите первое число:";
+	cin >> num1;
+
+	cout << "Введите второе число:";
+	cin >> num2;
+
+	int num1_1 = num1 / 100;
+	int num1_2 = (num1 / 10) % 10;
+	int num1_3 = num1 % 10;
+
+	int num2_1 = num2 / 100;
+	int num2_2 = (num2 / 10) % 10;
+	int num2_3 = num2 % 10;
+
+	int newNum1 = num1_1 * 100 + num2_2 * 10 + num1_3;
+	int newNum2 = num2_1 * 100 + num1_2 * 10 + num2_3;
+
+;
+
+	cout << "Новое первое число: " << newNum1 << "\n";
+	cout << "Новое второе число: " << newNum2 << "\n";
+}
+
+
+Task 7
+int main()
+{
+
+    setlocale(LC_ALL, "Russian");
+
+    int num;
+    cout << "Введите 4-значное число: ";
+    cin >> num;
+
+    int first = num / 1000;        
+    int second = (num / 100) % 10; 
+    int third = (num / 10) % 10;   
+    int fourth = num % 10;         
+
+
+    int sum = first + third;
+    int difference = second - fourth;
+
+    cout << "Сумма первой и третьей цифр: " << sum << endl;
+    cout << "Разность второй и четвертой цифр: " << difference << endl;
+}
+
+Task 8
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+
+	int num;
+    cout << "Введите 3-значное число: ";
+    cin >> num;
+
+   int first = num / 100;        
+   int second = (num / 10) % 10; 
+   int third = num % 10;   
+
+   int newNum = third * 100 + second * 10 + first;
+
+   cout << "Результат: " << newNum;
+}
