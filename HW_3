@@ -1,0 +1,427 @@
+#include <iostream>
+#include <locale>
+#include <cmath>
+
+using namespace std;
+
+
+//Task 1
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//	int num;
+//
+//	cout << "Введите число: ";
+//	cin >> num;
+//
+//	if (num % 2 == 0) {
+//		cout << "Число четное!";
+//	}
+//	else {
+//		cout << "Число не четное!";
+//	}
+//
+//}
+//
+
+//Task 2
+//int main()
+//{
+//	setlocale(LC_ALL, "Russian");
+//
+//	float a, b;
+//	int num;
+//
+//	cout << "Добро пожаловать в калькулятор\n";
+//
+//	cout << "Введите число a ->";
+//	cin >> a;
+//	cout << "\nВведите число b ->";
+//	cin >> b;
+//
+//	cout << "Выберите действие: \n";
+//	cout << "1 - Сложение \n";
+//	cout << "2 - Вычитание \n";
+//	cout << "3 - Умножение \n";
+//	cout << "4 - Деление \n";
+//	cout << "5 - % числа \n";
+//
+//	cout << "Ваш выбор -> ";
+//	cin >> num;
+//
+//	float c;
+//
+//	if (num == 1)
+//	{
+//		c = a + b;
+//		cout << "Результат -> " << c;
+//	}
+//	else if (num == 2)
+//	{
+//		c = a - b;
+//		cout << "Результат -> " << c;
+//	}
+//	else if (num == 3)
+//	{
+//		c = a * b;
+//		cout << "Результат -> " << c;
+//	}
+//	else if (num == 4)
+//	{
+//		if (b == 0) 
+//		{
+//			cout << "На 0 делить нельзя!";
+//			exit;
+//		}
+//		else 
+//		{
+//			c = a / b;
+//			cout << "Результат -> " << c;
+//		}
+//	}
+//	else if (num == 5)
+//	{
+//		if (b == 0) {
+//			cout << "Ошибка: делить на ноль нельзя!";
+//		}
+//		else {
+//			c = fmod(a, b);
+//			cout << "Результат -> " << c;
+//		}
+//	}
+//	else {
+//		cout << "Ошибка не правильно выбрали вариант!";
+//	}
+//}
+
+//Task 3
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	int a, b, num;
+//
+//	cout << "Введите начало диапазона -> ";
+//	cin >> a;
+//
+//	cout << "Введите конец диапазона -> ";
+//	cin >> b;
+//
+//	cout << "Введите число -> ";
+//	cin >> num;
+//
+//
+//	if (num >= a && num <= b)
+//	{
+//		cout << "Число входит в диапазон.";
+//	}
+//	else
+//	{
+//		cout << "Число не входит в диапазон.";
+//
+//	}
+//}
+
+//Task 4
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//    double x1, y1, x2, y2;
+//    cout << "Введите координаты верхнего левого угла прямоугольника (x1, y1): ";
+//    cin >> x1 >> y1;
+//    cout << "Введите координаты нижнего правого угла прямоугольника (x2, y2): ";
+//    cin >> x2 >> y2;
+//
+//    double X, Y;
+//    cout << "Введите координаты точки (X, Y): ";
+//    cin >> X >> Y;
+//
+//    if (X >= x1 && X <= x2 && Y >= y2 && Y <= y1) {
+//        cout << "Точка принадлежит прямоугольнику" << endl;
+//    }
+//    else {
+//        cout << "Точка не принадлежит прямоугольнику" << endl;
+//    }
+//}
+
+
+//Task 5
+//int main()
+//{
+//    setlocale(LC_ALL, "russian");
+//
+//    double a, b, c, d;
+//    cout << "Введите значение переменной a: ";
+//    cin >> a;
+//    cout << "Введите значение переменной b: ";
+//    cin >> b;
+//    cout << "Введите значение переменной c: ";
+//    cin >> c;
+//    cout << "Введите значение переменной d: ";
+//    cin >> d;
+//
+//    double max_value = (a > b ? (a > c ? (a > d ? a : d) : (c > d ? c : d)) : (b > c ? (b > d ? b : d) : (c > d ? c : d)));
+//
+//    cout << "Максимальное значение: " << max_value;
+//}
+
+//Task 6
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	int hour;
+//
+//	cout << "Введите который час -> ";
+//	cin >> hour;
+//
+//	if (hour > 6 && hour < 12) 
+//	{
+//		cout << "Доброе утро!";
+//	}
+//	else if (hour > 12 && hour < 18)
+//	{
+//		cout << "Добрый день!";
+//	}
+//	else if (hour > 18 && hour < 23)
+//	{
+//		cout << "Добрый вечер!";
+//	}
+//	else if (hour > 23 && hour < 6)
+//	{
+//		cout << "Доброй ночи!";
+//	}
+//	else
+//	{
+//		cout << "Ввели не правильное время.";
+//	}
+//}
+
+//Task 7
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//    int choice;
+//
+//    cout << "Выберите животное:\n";
+//    cout << "1. Кошка\n";
+//    cout << "2. Собака\n";
+//    cout << "3. Корова\n";
+//    cout << "4. Лошадь\n";
+//    cout << "5. Овца\n";
+//    cout << "6. Птица\n";
+//    cout << "7. Утка\n";
+//    cout << "8. Свинья\n";
+//    cout << "9. Кролик\n";
+//    cout << "10. Лиса\n";
+//    cout << "Введите номер животного: ";
+//    cin >> choice;
+//
+//    if (choice == 1)
+//    {
+//        cout << "Кошка говорит: Мяу!\n";
+//    }
+//    else if (choice == 2)
+//    {
+//        cout << "Собака говорит: Гав!\n";
+//    }
+//    else if (choice == 3)
+//    {
+//        cout << "Корова говорит: Му!\n";
+//    }
+//    else if (choice == 4)
+//    {
+//        cout << "Лошадь говорит: Иго-го!\n";
+//    }
+//    else if (choice == 5)
+//    {
+//        cout << "Овца говорит: Бе-е!\n";
+//    }
+//    else if (choice == 6)
+//    {
+//        cout << "Птица говорит: Чирик!\n";
+//    }
+//    else if (choice == 7)
+//    {
+//        cout << "Утка говорит: Кря!\n";
+//    }
+//    else if (choice == 8)
+//    {
+//        cout << "Свинья говорит: Хрю!\n";
+//    }
+//    else if (choice == 9)
+//    {
+//        cout << "Кролик говорит: Пух!\n";
+//    }
+//    else if (choice == 10)
+//    {
+//        cout << "Лиса говорит: Ррр!\n";
+//    }
+//    else
+//    {
+//        cout << "Животного под таким номером не существует!";
+//    }
+//
+//}
+
+//Task 8
+//int main() 
+//{
+//    setlocale(LC_ALL, "russian");
+//
+//    double height, weight;
+//    double idealWeight;
+//    int gender;
+//
+//    cout << "Введите рост (в см): ";
+//    cin >> height;
+//    cout << "Введите вес (в кг): ";
+//    cin >> weight;
+//    cout << "Введите пол (1 - м/ 2 - ж): ";
+//    cin >> gender;
+//
+//    if (gender == 2) {
+//        idealWeight = height - 110;
+//    }
+//    else if (gender == 1) {
+//        idealWeight = height - 100;
+//    }
+//    else {
+//        cout << "Неизвестный пол!";
+//        
+//    }
+//
+//    double difference = idealWeight - weight;
+//
+//    if (difference < 0) {
+//        cout << "Необходимо сбросить " << difference << " кг.";
+//    }
+//    else if (difference > 0) {
+//        cout << "Необходимо набрать " << difference << " кг.";
+//    }
+//    else {
+//        cout << "Ваш вес идеален!" << endl;
+//    }
+//}
+
+//Task 9
+//int main() 
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//    char answer;
+//    bool gameWon = true;
+//
+//    
+//    cout << "Вопрос 1: Какой язык программирования используется для создания этой игры?\n";
+//    cout << "a) Python\nb) C++\nc) Java\n";
+//    cout << "Ваш выбор -> ";
+//    cin >> answer;
+//
+//    if (answer == 'b') {
+//        cout << "Правильно!\n";
+//    }
+//    else {
+//        cout << "Неправильно. Игра окончена.\n";
+//        gameWon = false;
+//    }
+//
+//    
+//    if (gameWon) {
+//        cout << "Вопрос 2: Кто разработал язык C++?\n";
+//        cout << "a) Dennis Ritchie\nb) Bjarne Stroustrup\nc) Guido van Rossum\n";
+//        cout << "Ваш выбор -> ";
+//        cin >> answer;
+//
+//        if (answer == 'b') {
+//            cout << "Правильно!\n";
+//        }
+//        else {
+//            cout << "Неправильно. Игра окончена.\n";
+//            gameWon = false;
+//        }
+//    }
+//
+//    
+//    if (gameWon) {
+//        cout << "Вопрос 3: Какой оператор используется для вывода на экран в C++?\n";
+//        cout << "a) printf\nb) echo\nc) std::cout\n";
+//        cout << "Ваш выбор -> ";
+//        cin >> answer;
+//
+//        if (answer == 'c') {
+//            cout << "Правильно! Поздравляем, вы выиграли!\n";
+//        }
+//        else {
+//            cout << "Неправильно. Игра окончена.\n";
+//            gameWon = false;
+//        }
+//    }
+//}
+
+//Task 10
+//int main() {
+//	setlocale(LC_ALL, "russian");
+//
+//    int dayNumber;
+//
+//    using namespace std;
+//
+//    cout << "Введите номер дня недели (1-7): ";
+//    cin >> dayNumber;
+//
+//    if (dayNumber == 1) {
+//        cout << "Понедельник" << endl;
+//    }
+//    else if (dayNumber == 2) {
+//        cout << "Вторник" << endl;
+//    }
+//    else if (dayNumber == 3) {
+//        cout << "Среда" << endl;
+//    }
+//    else if (dayNumber == 4) {
+//        cout << "Четверг" << endl;
+//    }
+//    else if (dayNumber == 5) {
+//        cout << "Пятница" << endl;
+//    }
+//    else if (dayNumber == 6) {
+//        cout << "Суббота" << endl;
+//    }
+//    else if (dayNumber == 7) {
+//        cout << "Воскресенье" << endl;
+//    }
+//    else {
+//        cout << "Неверный номер. Пожалуйста, введите число от 1 до 7." << endl;
+//    }
+//
+//    switch (dayNumber) {
+//    case 1:
+//        cout << "Понедельник" << endl;
+//        break;
+//    case 2:
+//        cout << "Вторник" << endl;
+//        break;
+//    case 3:
+//        cout << "Среда" << endl;
+//        break;
+//    case 4:
+//        cout << "Четверг" << endl;
+//        break;
+//    case 5:
+//        cout << "Пятница" << endl;
+//        break;
+//    case 6:
+//        cout << "Суббота" << endl;
+//        break;
+//    case 7:
+//        cout << "Воскресенье" << endl;
+//        break;
+//    default:
+//        cout << "Неверный номер. Пожалуйста, введите число от 1 до 7." << endl;
+//        break;
+//    }
+//}
+//
