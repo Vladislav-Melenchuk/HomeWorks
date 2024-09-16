@@ -1,0 +1,235 @@
+#include <iostream>
+#include <locale>
+#include <iomanip>
+
+using namespace std;
+//Task 2
+// 2.Написать игру «Угадай число». Пользователь мысленно загадывает число от 0 до 1000, компьютер отгадывает его за минимальное количество попыток.
+// 
+//int main() {
+//    setlocale(LC_ALL, "russian");
+//
+//    int low = 0, high = 1000;
+//    int guess;
+//    char response;
+//
+//    cout << "Загадайте число от 0 до 1000.\n";
+//
+//    while (low <= high) {
+//        guess = (low + high) / 2;
+//        cout << "Компьютер думает, что это число: " << guess << "\n";
+//        cout << "Ваше число больше (>), меньше (<) или равно (=)? ";
+//        cin >> response;
+//
+//        if (response == '=') {
+//            cout << "Компьютер угадал ваше число!\n";
+//            break;
+//        }
+//        else if (response == '>') {
+//            low = guess + 1;
+//        }
+//        else if (response == '<') {
+//            high = guess - 1;
+//        }
+//    }
+//}
+
+//Task 1
+//1.С клавиатуры вводится целое число.Вывести на экран все числа, на которые введённое число делится без остатка.Например, для 60 такими числами станут 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.
+//
+//int main() {
+//    setlocale(LC_ALL, "russian");
+//
+//    int num;
+//
+//    cout << "Введите целое число -> ";
+//    cin >> num;
+//
+//    int numbers = 1;
+//
+//    for (numbers = 1; numbers > 0;  numbers++) {
+//        if (num % numbers == 0) {
+//            cout << numbers << ", ";
+//        }
+//    }
+//}
+
+//Task 3
+//3.Ежемесячная стипендия студента составляет N гривен, а расходы на проживание превышают стипендию и составляют M гривен в месяц.
+//Рост цен ежемесячно увеличивает расходы на 3 %.
+//Составьте программу расчёта суммы денег, которую необходимо единовременно попросить у родителей, чтобы можно было прожить учебный год(10 месяцев), используя только эти деньги и стипендию.
+//int main()
+//{
+//    setlocale(LC_ALL, "russian");
+//    double N, M;
+//    cout << "Введите сумму стипендии (N): ";
+//    cin >> N;
+//    cout << "Введите сумму расходов на проживание (M): ";
+//    cin >> M;
+//
+//    double total_expenses = 0; 
+//    double current_expenses = M; 
+//
+//    for (int month = 1; month <= 10; ++month) {
+//        total_expenses += current_expenses; 
+//        current_expenses *= 1.03; 
+//    }
+//
+//    double total_stipend = N * 10; 
+//    double money_needed = total_expenses - total_stipend; 
+//
+//    if (money_needed > 0) {
+//        cout << "Необходимо попросить у родителей: " << money_needed << " гривен" << std::endl;
+//    }
+//    else {
+//        cout << "Стипендии достаточно для покрытия всех расходов." << std::endl;
+//    }
+//}
+
+//Task 4
+//4.Написать программу, которая генерирует календарь на любой год, указанный с клавиатуры.
+
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	int year;
+//
+//	cout << "Введите год (пример: 2024) -> ";
+//	cin >> year;
+//
+//    
+//  bool isLeap = (year % 400 == 0) || (year % 100 != 0 && year % 4 == 0);
+//
+//  int dayOfWeek = (year + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400) % 7;
+//
+//  if (dayOfWeek == 0) 
+//	{
+//		dayOfWeek = 6;
+//	}
+//  else 
+//  {
+//   dayOfWeek--;  
+//  }
+// 
+//  for (int month = 1; month <= 12; month++) 
+//	{
+//		cout << "\n\n  ------------ Месяц " << month << " ------------\n";
+//      cout << "  Пн  Вт  Ср  Чт  Пт  Сб  Вс\n";
+//
+//      int daysInMonth;
+//      if (month == 2) 
+//		{  
+//			daysInMonth = isLeap ? 29 : 28;
+//      }
+//      else if (month == 4 || month == 6 || month == 9 || month == 11) 
+//		{
+//			daysInMonth = 30;  
+//      }
+//      else 
+//		{
+//			daysInMonth = 31;  
+//      }
+//
+//      for (int i = 0; i < dayOfWeek; i++) 
+//		{
+//			cout << "    ";
+//      }
+//
+//      for (int day = 1; day <= daysInMonth; day++) 
+//		{
+//			cout << setw(4) << day;
+//          if (++dayOfWeek > 6) 
+//			{ 
+//				dayOfWeek = 0;
+//              cout << endl;
+//          }
+//       }
+//	}
+//}
+
+//Task 5
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	int dragonHealth, dragonDamage, soldatHealth, soldatDamage, soldatCounter;
+//
+//	cout << "\t<<Бой с драконом>>";
+//	cout << "\nВведите очки здоровья Дракона -> ";
+//	cin >> dragonHealth;
+//
+//	cout << "\nВведите урон Дракона -> ";
+//	cin >> dragonDamage;
+//
+//	cout << "\nВведите количество копейщиков -> ";
+//	cin >> soldatCounter;
+//
+//	cout << "\nВведите здоровье копейщика -> ";
+//	cin >> soldatHealth;
+//
+//	cout << "\nВведите урон копейщика -> ";
+//	cin >> soldatDamage;
+//
+//	cout << "\n";
+//
+//	int round = 1;
+//
+//	int soldatsAlive = soldatCounter;
+//
+//	int ostatokHealthSoldat = soldatHealth;
+//
+//
+//	while (dragonHealth > 0 && soldatsAlive > 0)
+//	{
+//		cout << "Раунд " << round << ":";
+//		
+//		int totalDamage = soldatsAlive * soldatDamage;
+//		dragonHealth -= totalDamage;
+//
+//		if (dragonHealth < 0) {
+//			dragonDamage = 0;
+//		}
+//
+//		cout << "Копейщики атакуют (урон " << totalDamage << ") – у дракона осталось " << dragonHealth << " очков здоровья.\n";
+//
+//		
+//
+//		if (dragonHealth > 0)
+//		{
+//			int ostatokDamage = dragonDamage;
+//			
+//			while (ostatokDamage > 0 && soldatsAlive > 0)
+//			{
+//				if (ostatokDamage > ostatokHealthSoldat)
+//				{
+//					ostatokDamage -= ostatokHealthSoldat;
+//					soldatsAlive--;
+//					ostatokHealthSoldat = soldatHealth;
+//				}
+//				else
+//				{
+//					ostatokHealthSoldat -= ostatokDamage;
+//					ostatokDamage = 0;
+//				}
+//				round++;
+//			}
+//
+//			cout << "Дракон атакует (урон " << dragonDamage << ") – осталось " << soldatsAlive << " копейщиков";
+//
+//			if (soldatsAlive > 0 && ostatokHealthSoldat < soldatHealth) {
+//				cout << ", один из которых ранен (осталось " << ostatokHealthSoldat << " очков здоровья).\n";
+//			}
+//			else {
+//				cout << ".\n";
+//			}
+//		}
+//	}
+//
+//	if (dragonHealth > 0) {
+//		cout << "Дракон победил.\n";
+//	}
+//	else {
+//		cout << "Копейщики победили дракона!\n";
+//	}
+//}
