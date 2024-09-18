@@ -1,0 +1,169 @@
+#include <iostream>
+#include <locale>
+#include <cstdlib>
+#include <ctime>
+
+
+using namespace std;
+
+//task 1
+//int main()
+//{
+//	int arr[5] = { 1,43,213,22,44 };
+//	int size = sizeof(arr) / sizeof(arr[0]);
+//
+//	for (int i = 0; i < 5; i++)
+//	{
+//		cout << arr[i] << " ";
+//	}
+//	cout << "\n";
+//
+//	for (int i = size - 1; i >=0; i--)
+//	{
+//		cout << arr[i] << " ";
+//	}
+//
+//}
+
+//task 2
+//int main()
+//{
+//	int arr[20]{};
+//
+//	for (int i = 0; i < 20; i++)
+//	{
+//		arr[i] = rand() % 100;
+//
+//		if (arr[i] % 2 == 0)
+//		{
+//			cout << arr[i] << " ";
+//		}
+//	}
+//}
+
+//task 3
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//	int arr[10]{};
+//	srand(time(0));
+//
+//	int count = 0;
+//	int sum = 0, avg = 0;
+//
+//	for (int i = 0; i < 10; i++)
+//	{
+//		arr[i] = (rand() % 41) - 20;
+//		
+//		cout << arr[i] << " ";
+//		
+//		if (arr[i] >= 0)
+//		{
+//			sum += arr[i];
+//			count++;
+//		}
+//	}
+//
+//	
+//	avg = sum / count;
+//	
+//	cout << "\n Количество -> " << count;
+//	cout << "\n Sum -> " << sum;
+//	cout << "\n Avg -> " << avg;
+//}
+
+//task 4
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//	int num;
+//	int counter = 0;
+//
+//	cout << "Введите число от 1 до 100: ";
+//	cin >> num;
+//
+//	int arr[100]{};
+//	srand(time(0));
+//
+//	for (int i = 0; i < 100; i++)
+//	{
+//		arr[i] = rand() % 100;
+//		cout << arr[i] << " ";
+//		if (arr[i] == num)
+//		{
+//			counter++;
+//		}
+//	}
+//
+//	cout << "\n Это число попадалось -> " << counter;
+//
+//}
+
+//task 5
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//	int arr[20]{};
+//	int sum = 0;
+//	srand(time(0));
+//
+//	bool negative = false;
+//
+//	for (int i = 0; i < 20; i++)
+//	{
+//		arr[i] = (rand() % 41) - 10;
+//
+//		cout << arr[i] << " ";
+//
+//		if (arr[i] < 0 && !negative)
+//		{
+//			negative = true;
+//			continue;
+//		}
+//
+//		if (negative)
+//		{
+//			sum += arr[i];
+//		}
+//	}
+//
+//	cout << "\n Сумма -> " << sum;
+//}
+
+//task 6
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	int arr[20]{};
+//
+//	int sum = 0;
+//	srand(time(0));
+//
+//	bool positive = false;
+//
+//	for (int i = 0; i < 20; i++)
+//	{
+//		arr[i] = rand() % 41 - 30;
+//
+//		cout << arr[i] << " ";
+//
+//		if (arr[i] > 0 && !positive)
+//		{
+//			positive = true;
+//			continue;
+//		}
+//
+//		if (!positive) 
+//		{
+//			sum += arr[i];
+//		}
+//	}
+//
+//	cout << "\n Сумма -> " << sum;
+//
+//}
+
+
+
+
