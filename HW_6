@@ -1,0 +1,423 @@
+#include <iostream>
+#include <cstdlib>
+#include <locale>
+#include <ctime>
+
+using namespace std;
+
+//Task 1
+//int main()
+//{
+//    setlocale(LC_ALL, "russian");
+//    srand(time(0));
+//
+//
+//    int arr[4][5];
+//    int sum = 0, avg = 0;
+//    int maxElm = 0;
+//    int minElm = 21;
+//
+//    for (int i = 0; i < 4; i++)
+//    {
+//        for (int j = 0; j < 5; j++)
+//        {
+//            arr[i][j] = rand() % 21; 
+//            cout << arr[i][j] << " ";
+//
+//            sum += arr[i][j];
+//
+//            if (arr[i][j] > maxElm)
+//            {
+//                maxElm = arr[i][j];
+//            }
+//            if (arr[i][j] < minElm)
+//            {
+//                minElm = arr[i][j];
+//            }
+//        }
+//        cout << "\n";
+//    }
+//
+//    avg = sum / 20;
+//
+//    cout << "---------------------------------------";
+//    cout << "\nРезультат суммы -> " << sum;
+//    cout << "\nРезультат среднего числа -> " << avg;
+//    cout << "\nМинимальный элемент: " << minElm;
+//    cout << "\nМаксимальный элемент: " << maxElm;
+//    cout << "\n---------------------------------------";
+//
+//}
+
+//Task 2
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	const int M = 6;
+//	const int N = 6;
+//	int arr[M][N]{};
+//
+//	int sum1 = 0;
+//	int sum2 = 0;
+//	
+//	srand(time(0));
+//
+//	for (int i = 0; i < M; i++)
+//	{
+//		for (int j = 0; j < N; j++)
+//		{
+//			arr[i][j] = rand() % 21;
+//
+//			cout << arr[i][j] << "\t";
+//		}
+//		cout << "\n";
+//	}
+//
+//	for (int i = 0; i < M; i++)
+//	{
+//		sum1 += arr[i][i];
+//	}
+//
+//	for (int i = 0; i < M; i++)
+//	{
+//		sum2 += arr[i][N - i - 1];
+//	}
+//
+//	cout << "\nСумма главной диагонали -> " << sum1;
+//	cout << "\nСумма побочной диагонали -> " << sum2;
+//	
+//}
+
+//Task 3
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	const int M = 6;
+//	const int N = 6;
+//	int arr[M][N]{};
+//
+//	int counterPos = 0;
+//	int counterNeg = 0;
+//	int counterZero = 0;
+//
+//	srand(time(0));
+//
+//	for (int i = 0; i < M; i++)
+//	{
+//		for (int j = 0; j < N; j++)
+//		{
+//			arr[i][j] = rand() % 21 - 10;
+//			cout << arr[i][j] << " ";
+//
+//			if (arr[i][j] > 0)
+//			{
+//				counterPos++;
+//			}
+//			else if (arr[i][j] < 0)
+//			{
+//				counterNeg++;
+//			}
+//			else if (arr[i][j] == 0)
+//			{
+//				counterZero++;
+//			}
+//		}
+//		cout << "\n";
+//	}
+//
+//
+//	cout << "\nКол-во позитивных чисел -> " << counterPos;
+//	cout << "\nКол-во негативных чисел -> " << counterNeg;
+//	cout << "\nКол-во нулей -> " << counterZero;
+//}
+
+//Task 4
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//    const int M = 4;
+//    const int N = 5;  
+//    int num = 1;
+//    int arr[M][N]{};
+//
+//    for (int i = 0; i < M; ++i)
+//    {
+//        for (int j = 0; j < N; ++j) 
+//        {
+//            arr[i][j] = num++;
+//            cout << arr[i][j] << " ";
+//        }
+//
+//        cout << "\n";
+//    }
+//
+//    for (int i = 0; i < M - 1; i += 2) 
+//    {
+//        int temp[N]{};
+//        
+//        for (int j = 0; j < N; ++j) {
+//            temp[j] = arr[i][j];
+//        }
+//        
+//        for (int j = 0; j < N; ++j) 
+//        {
+//            arr[i][j] = arr[i + 1][j];
+//        }
+//        
+//        for (int j = 0; j < N; ++j) 
+//        {
+//            arr[i + 1][j] = temp[j];
+//        }
+//    }
+//
+//    cout << "\nМассив после перестановки строк:\n";
+//    for (int i = 0; i < M; ++i) 
+//    {
+//        for (int j = 0; j < N; ++j) 
+//        {
+//            cout << arr[i][j] << " ";
+//        }
+//
+//        cout << "\n";
+//    }
+//}
+
+//Task 5
+//int main() 
+//{
+//    const int M = 5; 
+//    const int N = 6; 
+//    int arr[M][N]{};
+//
+//    int num = 1;
+//
+//    for (int i = 0; i < M; i++) 
+//    {
+//        for (int j = 0; j < N; j++) 
+//        {
+//            arr[i][j] = num++;
+//            cout << arr[i][j] << "\t";
+//        }
+//
+//        cout << "\n";
+//    }
+//}
+
+//Task 6
+//int main() 
+//{
+//    const int M = 5; 
+//    const int N = 6; 
+//    int arr[M][N]{};
+//
+//    int num = 1;
+//
+//    for (int i = 0; i < M; i++) 
+//    {
+//        for (int j = 0; j < N; j++) 
+//        {
+//            arr[i][j] = num++;
+//        }
+//    }
+//
+//    for (int i = 0; i < M; i++) 
+//    {
+//        if (i % 2 == 0) 
+//        {
+//            for (int j = 0; j < N; j++) 
+//            {
+//                cout << arr[i][j] << "\t";
+//            }
+//        }
+//        else 
+//        {
+//            for (int j = N - 1; j >= 0; j--) 
+//            {
+//                cout << arr[i][j] << "\t";
+//            }
+//        }
+//
+//        cout << "\n";
+//    }
+//}
+
+//Task 7
+//int main() 
+//{
+//    setlocale(LC_ALL, "russian");
+//    const int M = 5; 
+//    const int N = 5; 
+//
+//    int arr[M][N]{};
+//
+//    for (int i = 0; i < M; i++) 
+//    {
+//        for (int j = 0; j < N; j++) 
+//        {
+//            arr[i][j] = (i + 1) * 10 + (j + 1);
+//        }
+//    }
+//
+//    for (int i = 0; i < M; i++) 
+//    {
+//        for (int j = 0; j < N; j++) 
+//        {
+//            cout << arr[i][j] << "\t";
+//        }
+//        cout << "\n";
+//    }
+//}
+
+
+//Task 8
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	srand(time(0));
+//
+//	const int hall1_col = 5;
+//	const int hall1_row = 12;
+//
+//	const int hall2_col = 4;
+//	const int hall2_row = 10;
+//
+//	int hall_1[hall1_col][hall1_row]{};
+//	int hall_2[hall2_col][hall2_row]{};
+//
+//	for (int i = 0; i < hall1_col; i++)
+//	{
+//		for (int j = 0; j < hall1_row; j++)
+//		{
+//			hall_1[i][j] = rand() % 2;
+//		}
+//	}
+//
+//	for (int i = 0; i < hall2_col; i++)
+//	{
+//		for (int j = 0; j < hall2_row; j++)
+//		{
+//			hall_2[i][j] = rand() % 2;
+//		}
+//	}
+//
+//	cout << "Выберете зал, в который хотите пойти -> \n 1 - Зал №1 \n 2 - Зал №2 \n->";
+//
+//	int choice;
+//	cin >> choice;
+//	if (choice != 1 && choice != 2) {
+//		cout << "Такого зала не существует!";
+//		exit(0);
+//	}
+//
+//	int tickets; 
+//	cout << "Введите количество билетов, которые хотите купить: ";
+//	cin >> tickets;
+//
+//	bool found = false;
+//
+//	switch (choice)
+//	{
+//	case 1:
+//	{
+//		cout << "0 - свободные места , 1 - места которые выкупили.\n -------------------------------- \n";
+//		for (int i = 0; i < hall1_col; i++)
+//		{
+//			for (int j = 0; j < hall1_row; j++)
+//			{
+//				cout << hall_1[i][j] << " ";
+//			}
+//			cout << "\n";
+//		}
+//
+//		for (int i = 0; i < hall1_col; i++)
+//		{
+//			int count = 0; 
+//			for (int j = 0; j < hall1_row; j++)
+//			{
+//				if (hall_1[i][j] == 0)
+//				{
+//					count++;
+//					if (count == tickets)
+//					{
+//						found = true;
+//						cout << "\nМожно купить - " << tickets << " билетов в зале №1, ряд " << i + 1;
+//						break;
+//					}
+//				}
+//				else
+//				{
+//					count = 0;
+//				}
+//			}
+//			if (found)
+//			{
+//				break;
+//			}
+//		}
+//
+//		if (!found)
+//		{
+//			cout << "\n Недостаточно свободных мест подряд.\n";
+//		}
+//
+//		break;
+//	}
+//	case 2:
+//	{
+//		cout << "0 - свободные места , 1 - места которые выкупили.\n -------------------------------- \n";
+//		for (int i = 0; i < hall2_col; i++)
+//		{
+//			for (int j = 0; j < hall2_row; j++)
+//			{
+//				cout << hall_2[i][j] << " ";
+//			}
+//			cout << "\n";
+//		}
+//
+//		for (int i = 0; i < hall2_col; i++)
+//		{
+//			int count = 0; 
+//			for (int j = 0; j < hall2_row; j++)
+//			{
+//				if (hall_2[i][j] == 0)
+//				{
+//					count++;
+//					if (count == tickets)
+//					{
+//						found = true;
+//						cout << "\nМожно купить " << tickets << " билетов в зале №2, ряд " << i + 1;
+//						break;
+//					}
+//				}
+//				else
+//				{
+//					count = 0; 
+//				}
+//			}
+//			if (found)
+//			{
+//				break;
+//			}
+//		}
+//
+//		if (!found)
+//		{
+//			cout << "\nНедостаточно свободных мест подряд.\n";
+//		}
+//
+//		break;
+//	}
+//	default:
+//	{
+//		cout << "Вы выбрали неправильный зал!";
+//		break;
+//	}
+//	}
+//
+//}
+
+
