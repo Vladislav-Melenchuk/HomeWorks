@@ -1,0 +1,101 @@
+#include <iostream>
+#include <locale>
+#include <windows.h> 
+
+using namespace std;
+
+//Task 1
+//bool prostoenum(int num) {
+//
+//    for (int i = 2; i * i <= num; i++) {
+//        if (num % i == 0) {
+//            return false;
+//        }
+//    }
+//    return true; 
+//}
+//
+//int main() {
+//    setlocale(LC_ALL, "russian");
+//    int num;
+//
+//    cout << "Введите число -> ";
+//    cin >> num;
+//
+//    if (prostoenum(num)) {
+//        cout << "Число простое!";
+//    }
+//    else {
+//        cout << "Число не простое!";
+//    }
+//}
+
+
+//Task 2
+//int sumOfDis(int a, int b, int sum = 0)
+//{
+//	for (int i = a; i <= b; i++)
+//	{
+//		sum += i;
+//	}
+//	return sum;
+//}
+//
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	cout << sumOfDis(1, 5);
+//}
+
+//Task 3
+//int cube(int num)
+//{
+//	return num * num * num;
+//}
+//
+//int main() {
+//	setlocale(LC_ALL, "russian");
+//
+//	int num;
+//
+//	cout << "Введите число -> ";
+//
+//	cin >> num;
+//
+//	cout << "Результа -> " << cube(num);
+//}
+
+//Task 4
+
+//void SetColor(int textColor) {
+//    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+//    SetConsoleTextAttribute(hConsole, textColor);
+//}
+//
+//void line(int length, char symbol, int color, bool isHorizontal) {
+//    
+//    SetColor(color);
+//
+//    if (isHorizontal) {
+//        
+//        for (int i = 0; i < length; i++) {
+//            cout << symbol;
+//        }
+//    }
+//    else {
+//        for (int i = 0; i < length; i++) {
+//            cout << symbol <<"\n";
+//        }
+//    }
+//
+//    SetColor(7);
+//}
+//
+//int main()
+//{
+//    line(20, '@', 12, false);
+//}
+
+
+
