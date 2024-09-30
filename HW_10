@@ -1,0 +1,84 @@
+#include <iostream>
+#include <locale>
+
+using namespace std;
+
+//Task 1
+
+//int number(int num, int start)
+//{
+//	if (start > num)
+//	{
+//		return 1;
+//	}
+//
+//	cout << start << " ";
+//
+//	number(num, start + 1);
+//}
+//
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//	int num;
+//	cout << "Введите число -> ";
+//	cin >> num;
+//
+//	number(num, 1);
+//}
+
+//Task 2
+
+//void disCounter(int a, int b) 
+//{
+//    if (a > b)
+//    {
+//        cout << a << " ";
+//        if (a != b)
+//            disCounter(a - 1, b);
+//    }
+//    else
+//    {
+//        cout << a << " ";
+//        if (a != b)
+//            disCounter(a + 1, b); 
+//    }
+//}
+//
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	int a, b;
+//	cout << "Введите число (А) -> ";
+//	cin >> a;
+//	cout << "\nВведите число (B) -> ";
+//	cin >> b;
+//
+//	disCounter(a, b);
+//}
+
+//Task 3
+
+//int sumNum(int num)
+//{
+//	if (num == 0)
+//	{
+//		return 0;
+//	}
+//	else
+//	{
+//		return (num % 10) + sumNum(num / 10);
+//	}
+//}
+//
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//	
+//	int num;
+//	cout << "Введите число -> ";
+//	cin >> num;
+//
+//	cout << sumNum(num);
+//}
