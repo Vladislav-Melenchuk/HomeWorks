@@ -1,0 +1,147 @@
+#include <iostream>
+
+using namespace std;
+
+//Task 1
+
+//int main()
+//{
+//	int num1, num2, res, byteDis;
+//	cout << "Num 1 ->";
+//	cin >> num1;
+//	cout << "\nNum 2 ->";
+//	cin >> num2;
+//
+//	int* ptr1 = &num1;
+//	int* ptr2 = &num2;
+//
+//	cout << "Num1 = "<< ptr1 << "\n";
+//	cout << "Num2 = "<< ptr2 << "\n";
+//
+//	if (ptr1 < ptr2)
+//	{
+//		res = ptr2 - ptr1;
+//	}
+//	else
+//	{
+//		res = ptr1 - ptr2;
+//	}
+//
+//	cout << "Resault"<< res << "\n";
+//
+//	byteDis = res * sizeof(int);
+//
+//	cout << "ByteDistance"<< byteDis << "\n";
+//}
+
+//Task 2
+
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	int num;
+//	cout << "Введите число -> ";
+//	cin >> num;
+//
+//	int* ptr = &num;
+//
+//	cout << "\nВторая степень - " << pow(*ptr, 2) << "\n";
+//	cout << "Третья степень - " << pow(*ptr, 3) << "\n";
+//	cout << "Четвертая степень - " << pow(*ptr, 4) << "\n";
+//}
+
+//Task 3
+
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	double num1, num2, res;
+//	cout << "\nВведите число ->";
+//	cin >> num1;
+//	cout << "\nВведите число ->";
+//	cin >> num2;
+//
+//	double* ptr1 = &num1;
+//	double* ptr2 = &num2;
+// 
+//	double** Pptr1 = &ptr1;
+//	double** Pptr2 = &ptr2;
+//
+//	double* ptrRes = &res;
+//
+//	*ptrRes = **Pptr1 + **Pptr2;
+//
+//	cout << "Ответ -> " << *ptrRes;
+//}
+
+//Task 4
+
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//	double height, weight, diff, idealWeight;
+//
+//	cout << "Введите ваш рост -> ";
+//	cin >> height;
+//
+//	cout << "Введите ваш вес -> ";
+//	cin >> weight;
+//
+//    double* pHeight = &height;
+//    double* pWeight = &weight;
+//    double* pIdealWeight = &idealWeight;
+//    double* pDiff = &diff;
+//
+//    double** ppHeight = &pHeight;
+//    double** ppWeight = &pWeight;
+//    double** ppIdealWeight = &pIdealWeight;
+//    double** ppDiff = &pDiff;
+//
+//    double*** pppHeight = &ppHeight;
+//    double*** pppWeight = &ppWeight;
+//    double*** pppIdealWeight = &ppIdealWeight;
+//    double*** pppDiff = &ppDiff;
+//
+//    ***pppIdealWeight = ***pppHeight - 110;  
+//    ***pppDiff = ***pppWeight - ***pppIdealWeight;
+//
+//    cout << "Ваш идеальный вес: " << idealWeight << " кг" << endl;
+//    if (diff > 0) {
+//        cout << "Вам нужно сбросить " << diff << " кг." << endl;
+//    }
+//    else if (diff < 0) {
+//        cout << "Вам нужно набрать " << -diff << " кг." << endl;
+//    }
+//    else {
+//        cout << "Ваш вес идеальный!" << endl;
+//    }
+//}
+
+//Task 5
+
+//int main()
+//{
+//	setlocale(LC_ALL, "russian");
+//
+//    int value = 54;
+//
+//    int* ptr1 = &value;
+//
+//    int** ptr2 = &ptr1;
+//
+//    int*** ptr3 = &ptr2;
+//
+//    int**** ptr4 = &ptr3;
+//
+//    int***** ptr5 = &ptr4;
+//
+//    cout << "Адрес числа - " << *****ptr5 << "\n";
+//    cout << "Адрес ptr1 - " << ****ptr5 << "\n";
+//    cout << "Адрес ptr2 - " << ***ptr5 << "\n";
+//    cout << "Адрес ptr3 - " << **ptr5 << "\n";
+//    cout << "Адрес ptr4 - " << *ptr5 << "\n";
+//    cout << "Адрес ptr5 - " << ptr5 << "\n";
+//}
