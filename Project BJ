@@ -1,0 +1,299 @@
+#include <iostream>
+#include <cstdlib>
+#include <locale>
+#include <windows.h>
+#include <conio.h>
+#include <string>
+#include "libraryHelper.h"
+
+using namespace std;
+
+//Функции меню
+void menu();
+void authorLobby();
+void rulesList();
+
+//Визуал меню
+void visualMenu();
+
+//Инструменты
+void setColor(int color);
+
+
+
+
+//=========================================================================================
+//Основание
+void main()
+{
+    setlocale(LC_ALL, "russian");
+    SetConsoleWindowSize(700, 1400);
+    CenterScreen();
+   
+    system("cls");
+    
+    menu();
+
+
+}
+
+
+
+//=========================================================================================
+//Функции меню
+void menu() 
+{
+    system("cls");
+    visualMenu();
+
+    int choice = 0;
+
+    while (choice != 4)
+    {
+        while (true)
+        {
+            setColor(9);
+            cout << "\n\t\tВыберите опцию -> ";
+            setColor(8);
+            cin >> choice;
+
+            if (cin.fail()) {
+                cin.clear();
+                cin.ignore(1000, '\n');  
+                setColor(4);
+                cout << "\t\tОшибка! Введите именно число.\n";
+                setColor(9);
+            }
+            else {
+                break;  
+            }
+        }
+       
+
+        switch (choice)
+        {
+
+        case 1:
+            //начало игры
+            break;
+
+        case 2:
+            system("cls");
+            rulesList();
+            break;
+
+        case 3:
+            system("cls");
+            authorLobby();
+            break;
+
+        case 4:
+            setColor(4);
+            cout << "\t\tВы вышли из казино. Удачи и хорошего дня!";
+            setColor(8);
+            break;
+       
+           
+        default:
+            setColor(4);
+            cout << "\n\t\tОшибка! Выберите правильную цифру.";
+            cout << "\n";
+            setColor(8);
+            break;
+        }
+    }
+
+}
+
+void visualMenu()
+{
+   
+    setColor(3); 
+    cout << "\t\t=========================================\n";
+    cout << "\t\t|                КАЗИНО                 |\n";
+    cout << "\t\t=========================================\n";
+    setColor(11);
+
+    cout << "\t\t+---------------------------------------+\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t|      ";
+    cout << "1. Играть в Blackjack";
+    cout << "            |\n";
+    cout << "\t\t|      ";
+    cout << "2. Правила игры";
+    cout << "                  |\n";
+    cout << "\t\t|      ";
+    cout << "3. Автор";
+    cout << "                         |\n";
+    cout << "\t\t|      ";
+    cout << "4. Выйти из игры";
+    cout << "                 |\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t+---------------------------------------+\n";
+    setColor(8);
+    
+}
+
+void rulesList()
+{
+    setColor(3);
+    cout << "\t\t=========================================\n";
+    cout << "\t\t|              Правила игры             |\n";
+    cout << "\t\t=========================================\n";
+    setColor(11);
+
+    setColor(11);
+    cout << "\t\t+---------------------------------------+\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t|  1. Цель игры - набрать 21 очко.      |\n";
+    cout << "\t\t|     Карты с цифрами имеют свое        |\n";
+    cout << "\t\t|     номинальное значение.             |\n";
+    cout << "\t\t|     Карты с картинками стоят          |\n";
+    cout << "\t\t|     по 10 очков.                      |\n";
+    cout << "\t\t|     Тузы могут стоить 1 или 11 очков. |\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t|  2. Игроки соревнуются против дилера. |\n";
+    cout << "\t\t|     Ваша задача - получить больше     |\n";
+    cout << "\t\t|     очков, чем у дилера, но не больше |\n";
+    cout << "\t\t|     21.                               |\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t|  3. Если сумма ваших очков больше 21, |\n";
+    cout << "\t\t|     вы проигрываете (перебор).        |\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t|  4. Blackjack — это 21 очко из двух   |\n";
+    cout << "\t\t|     карт (туз + карта стоимостью 10). |\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t+---------------------------------------+\n";
+
+    int num;
+
+    while (true)
+    {
+        setColor(9);
+        cout << "\n";
+        cout << "\n\t\tЧтобы выйти нажмите (1)\n\t\tЧтобы начать играть нажмите (2)";
+        setColor(8);
+        cout << "\n\t\tВаш выбор -> ";
+        cin >> num;
+
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            setColor(4);
+            cout << "\n\t\tОшибка! Введите именно число.";
+            setColor(9);
+        }
+        else if (num == 1)
+        {
+            system("cls");
+            menu();
+            break;
+        }
+        else if (num == 2)
+        {
+            system("cls");
+            //начало игры
+            break;
+        }
+        else
+        {
+            setColor(4);
+            cout << "\n\t\tОшибка! Введите именно число 1 чтобы выйти.";
+            setColor(9);
+        }
+    }
+
+    setColor(8); 
+}
+
+void authorLobby()
+{
+    setColor(3);
+    cout << "\t\t=========================================\n";
+    cout << "\t\t|              АВТОР ПРОЕКТА            |\n";
+    cout << "\t\t=========================================\n";
+    setColor(11);
+
+    setColor(11);
+    cout << "\t\t+---------------------------------------+\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t|       ";
+    cout << "Владислав Меленчук";
+    cout << "              |\n";
+    cout << "\t\t|       ";
+    cout << "Студент группы ПВ 421";
+    cout << "           |\n";
+    cout << "\t\t|                                       |\n";
+    cout << "\t\t+---------------------------------------+\n";
+
+    int num;
+
+    while (true)
+    {
+        setColor(9);
+        cout << "\n";
+        cout << "\n\t\tЧтобы выйти нажмите (1) -> ";
+        setColor(8);
+        cin >> num;
+
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            setColor(4);
+            cout << "\n\t\tОшибка! Введите именно число.";
+            setColor(9);
+        }
+        else if(num==1)
+        {
+            system("cls");
+            menu();
+            break;
+        }
+        else
+        {
+            setColor(4);
+            cout << "\n\t\tОшибка! Введите именно число 1 чтобы выйти.";
+            setColor(9);
+        }
+    }
+    
+    setColor(8);
+}
+
+
+
+//=========================================================================================
+//Функции
+
+
+
+
+//=========================================================================================
+//Инструменты
+
+//Цвета:
+//0: Чёрный
+//1 : Синий
+//2 : Зелёный
+//3 : Бирюзовый
+//4 : Красный
+//5 : Пурпурный
+//6 : Жёлтый
+//7 : Белый(серый)
+//8 : Серый
+//9 : Светло - синий
+//10 : Светло - зелёный
+//11 : Светло - бирюзовый
+//12 : Светло - красный
+//13 : Светло - пурпурный
+//14 : Светло - жёлтый
+//15 : Ярко - белый
+
+void setColor(int color) {
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, color);
+}
+
+
+
+
