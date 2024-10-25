@@ -1,0 +1,14 @@
+﻿  Project BJ.cpp
+D:\Course\C++\project BJ\Project BJ\Project BJ\libraryHelper.h(201,18): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+  (компиляция исходного файла "Project%20BJ.cpp")
+  
+D:\Course\C++\project BJ\Project BJ\Project BJ\libraryHelper.h(201,21): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+  (компиляция исходного файла "Project%20BJ.cpp")
+  
+D:\Course\C++\project BJ\Project BJ\Project BJ\libraryHelper.h(230,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "Project%20BJ.cpp")
+  
+D:\Course\C++\project BJ\Project BJ\Project BJ\Project BJ.cpp(41,6): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\Course\C++\project BJ\Project BJ\Project BJ\Project BJ.cpp(660,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Course\C++\project BJ\Project BJ\Project BJ\Project BJ.cpp(751,28): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  Project BJ.vcxproj -> D:\Course\C++\project BJ\Project BJ\x64\Debug\Project BJ.exe
