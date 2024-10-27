@@ -6,43 +6,38 @@
 
 using namespace std;
 
-void addWord(string& theme, string& word);
-
 int main()
 {
 	setlocale(LC_ALL, "russian");
 	string theme, word;
 
-  while (true)
+	while (true)
 	{
 		cout << "\n===================================\n";
 		cout << "Для выхода из программы (q)\n";
 		cout << "Введите тему слова -> ";
 		getline(cin, theme);
-    if (theme == "q")
-		  {
-			  break;
-		  }
-    cout << "Введите слово -> ";
+
+		if (theme == "q")
+		{
+			break;
+		}
+
+		cout << "Введите слово -> ";
 		getline(cin, word);
-    addWord(theme, word);
-	}
-}
 
+		string fileName = theme + ".txt";
 
-void addWord(string& theme, string& word)
-{
-	string fileName = theme + ".txt";
-  
-  ofstream file(fileName, ios::app);
-	if (file.is_open())
-	{
-		file << word << ", ";
-		cout << "Слово добавлено.\n";
-	}
-	else
-	{
-		cout << " Ошибка!";
+		ofstream file(fileName, ios::app);
+		if (file.is_open())
+		{
+			file << word << ", ";
+			cout << "Слово добавлено.\n";
+		}
+		else
+		{
+			cout << " Ошибка!";
+		}
 	}
 }
 ```

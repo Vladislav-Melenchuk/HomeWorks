@@ -1,3 +1,5 @@
+
+```
 #include <iostream>
 
 using namespace std;
@@ -65,3 +67,4 @@ int main()
 	cout << "Происхождение: " << rose1.country << "\n";
 
 }
+```
