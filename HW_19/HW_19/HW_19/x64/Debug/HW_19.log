@@ -1,0 +1,3 @@
+﻿  HW_19.cpp
+D:\Course\C++\HW\HW_19\HW_19.cpp(187,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  HW_19.vcxproj -> D:\Course\C++\HW\HW_19\x64\Debug\HW_19.exe
