@@ -1,0 +1,18 @@
+﻿  vectors.cpp
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(16,22): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(53,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(68,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(88,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(144,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(187,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(191,23): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(225,15): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(238,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(240,22): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(254,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(256,22): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(270,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(272,21): warning C4018: '<': signed/unsigned mismatch
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(284,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Course\C++\HomeWorks\HWOP\vectors\vectors.cpp(286,21): warning C4018: '<': signed/unsigned mismatch
+  vectors.vcxproj -> D:\Course\C++\HomeWorks\HWOP\vectors\x64\Debug\vectors.exe
