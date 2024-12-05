@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWOP_4", "HWOP_4.vcxproj", "{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Debug|x64.ActiveCfg = Debug|x64
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Debug|x64.Build.0 = Debug|x64
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Debug|x86.ActiveCfg = Debug|Win32
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Debug|x86.Build.0 = Debug|Win32
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Release|x64.ActiveCfg = Release|x64
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Release|x64.Build.0 = Release|x64
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Release|x86.ActiveCfg = Release|Win32
+		{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B80F5D89-B33D-43EE-B3FE-F5F0E3241E70}
+	EndGlobalSection
+EndGlobal

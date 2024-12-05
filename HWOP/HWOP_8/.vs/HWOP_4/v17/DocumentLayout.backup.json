@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\HWOP_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|solutionrelative:HWOP_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Cat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|solutionrelative:Cat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Smartphone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|solutionrelative:Smartphone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Cat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|solutionrelative:Cat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Smartphone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4EBD3F9E-0766-4FE2-841E-2890A5CEDCDD}|HWOP_4.vcxproj|solutionrelative:Smartphone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HWOP_4.cpp",
+              "DocumentMoniker": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\HWOP_4.cpp",
+              "RelativeDocumentMoniker": "HWOP_4.cpp",
+              "ToolTip": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\HWOP_4.cpp",
+              "RelativeToolTip": "HWOP_4.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAApwBQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-14T23:37:34.252Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cat.cpp",
+              "DocumentMoniker": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Cat.cpp",
+              "RelativeDocumentMoniker": "Cat.cpp",
+              "ToolTip": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Cat.cpp",
+              "RelativeToolTip": "Cat.cpp",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-04T17:08:17.798Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Smartphone.h",
+              "DocumentMoniker": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Smartphone.h",
+              "RelativeDocumentMoniker": "Smartphone.h",
+              "ToolTip": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Smartphone.h",
+              "RelativeToolTip": "Smartphone.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-04T22:58:34.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Smartphone.cpp",
+              "DocumentMoniker": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Smartphone.cpp",
+              "RelativeDocumentMoniker": "Smartphone.cpp",
+              "ToolTip": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Smartphone.cpp",
+              "RelativeToolTip": "Smartphone.cpp",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAHcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-04T22:58:32.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cat.h",
+              "DocumentMoniker": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Cat.h",
+              "RelativeDocumentMoniker": "Cat.h",
+              "ToolTip": "D:\\Course\\C\u002B\u002B\\PracticeOOP\\HWOP_4\\Cat.h",
+              "RelativeToolTip": "Cat.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-04T17:08:54.448Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
